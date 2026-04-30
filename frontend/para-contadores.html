@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para Contadores - IncentivaBR</title>
-  <meta name="description" content="Ferramentas para contadores facilitarem a destinação de IR dos clientes. Calculadora, relatórios e programa de parceria.">
+  <title>Espaço do Contador — IncentivaBR</title>
+  <meta name="description" content="Ferramentas e informações para contadores orientarem clientes sobre destinação de IR. Calculadora, base legal, programa de parceria CRC/CFC.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -152,6 +152,18 @@
       color: #F7941D;
     }
 
+    .limits-table tr.total-row td {
+      background: #f0f4ff;
+      font-weight: 700;
+      font-size: 15px;
+      color: #1E3A5F;
+    }
+
+    .limits-table tr.total-row td:last-child {
+      color: #1E3A5F;
+      font-size: 17px;
+    }
+
     .partner-section {
       padding: 80px 24px;
       background: white;
@@ -220,6 +232,14 @@
       color: #F7941D;
     }
 
+    .partner-card li.em-breve {
+      opacity: 0.55;
+    }
+
+    .partner-card li.em-breve i {
+      color: #aaa !important;
+    }
+
     .tools-section {
       padding: 80px 24px;
       background: #1E3A5F;
@@ -277,6 +297,20 @@
       margin-right: auto;
     }
 
+    .crc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
     @media (max-width: 768px) {
       .hero-contador h1 {
         font-size: 28px;
@@ -312,11 +346,12 @@
 
   <!-- Hero -->
   <section class="hero-contador">
-    <div class="badge"><i class="fas fa-calculator"></i> Para Profissionais Contabeis</div>
-    <h1>Ajude Seus Clientes a Destinar IR</h1>
+    <div class="crc-badge"><i class="fas fa-id-badge"></i> CRC / CFC — Profissionais Habilitados</div>
+    <div class="badge"><i class="fas fa-calculator"></i> Espaço do Contador</div>
+    <h1>Ajude Seus Clientes a Destinar o IR</h1>
     <p>
-      Ferramentas gratuitas para voce orientar clientes sobre destinacao de Imposto de Renda
-      e se diferenciar no mercado.
+      Ferramentas gratuitas para você orientar clientes sobre destinação de Imposto de Renda
+      e se diferenciar no mercado contábil.
     </p>
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="#parceiro" class="btn btn-white" style="color: #1E3A5F;">
@@ -332,8 +367,8 @@
   <section class="value-props">
     <div class="container">
       <div class="section-header">
-        <h2>Por Que Indicar Destinacao de IR?</h2>
-        <p>Beneficios para voce e seus clientes</p>
+        <h2>Por Que Indicar Destinação de IR?</h2>
+        <p>Benefícios para você e seus clientes</p>
       </div>
 
       <div class="value-grid">
@@ -341,28 +376,28 @@
           <div class="icon"><i class="fas fa-star"></i></div>
           <div>
             <h3>Diferencial Competitivo</h3>
-            <p>Poucos contadores orientam sobre destinacao. Destaque-se oferecendo esse servico.</p>
+            <p>Poucos contadores orientam sobre destinação. Destaque-se oferecendo esse serviço que agrega valor sem custo para o cliente.</p>
           </div>
         </div>
         <div class="value-card">
           <div class="icon"><i class="fas fa-wallet"></i></div>
           <div>
-            <h3>Sem Custo pro Cliente</h3>
-            <p>O valor destinado volta na restituicao ou abate do imposto. Cliente nao paga nada a mais.</p>
+            <h3>Sem Custo para o Cliente</h3>
+            <p>O valor destinado retorna integralmente na restituição ou abate o imposto a pagar. O cliente não paga nada a mais.</p>
           </div>
         </div>
         <div class="value-card">
           <div class="icon"><i class="fas fa-heart"></i></div>
           <div>
             <h3>Impacto Social</h3>
-            <p>Ajude a direcionar recursos para projetos sociais de criancas, idosos, cultura e esporte.</p>
+            <p>Direcione recursos para projetos de crianças, idosos, cultura, esporte e meio ambiente aprovados pelo governo federal.</p>
           </div>
         </div>
         <div class="value-card">
           <div class="icon"><i class="fas fa-chart-line"></i></div>
           <div>
-            <h3>Fidelizacao</h3>
-            <p>Clientes valorizam contadores que vao alem do basico e trazem oportunidades.</p>
+            <h3>Fidelização de Clientes</h3>
+            <p>Clientes valorizam contadores que vão além do básico e trazem oportunidades fiscais concretas e seguras.</p>
           </div>
         </div>
       </div>
@@ -373,75 +408,94 @@
   <section class="legal-section">
     <div class="container">
       <div class="section-header">
-        <h2>Base Legal e Tecnica</h2>
-        <p>Informacoes para sua seguranca profissional</p>
+        <h2>Base Legal e Técnica</h2>
+        <p>Informações para sua segurança profissional (CRC/CFC)</p>
       </div>
 
       <div class="legal-content">
         <div class="legal-box">
-          <h3><i class="fas fa-gavel"></i> Fundamentacao Legal</h3>
+          <h3><i class="fas fa-gavel"></i> Fundamentação Legal</h3>
           <p>
-            A destinacao de parte do IR devido para fundos de incentivo esta prevista na
+            A destinação de parte do IR devido para fundos de incentivo está prevista na
             <strong>Lei 9.532/1997 (arts. 22 e 22-A)</strong> e regulamentada pelo
             <strong>RIR/2018 (Decreto 9.580/2018)</strong>. A Receita Federal detalha os
-            procedimentos na <strong>IN RFB 1.131/2011</strong> e atualizacoes.
+            procedimentos na <strong>IN RFB 1.131/2011</strong> e atualizações.
+            Os percentuais abaixo são vigentes para o ano-calendário <strong>2025</strong>.
           </p>
         </div>
 
         <div class="legal-box">
-          <h3><i class="fas fa-percentage"></i> Limites de Deducao</h3>
+          <h3><i class="fas fa-percentage"></i> Limites de Dedução — Quadro Correto 2025</h3>
           <p style="margin-bottom: 1rem;">
-            Os limites sao calculados sobre o <strong>IR devido apurado na declaracao</strong>,
-            antes de deducoes de IR retido na fonte:
+            Os limites são calculados sobre o <strong>IR devido apurado na declaração</strong>,
+            antes das deduções do IR retido na fonte. Os grupos operam com teto conjunto:
           </p>
           <table class="limits-table">
             <thead>
               <tr>
-                <th>Tipo de Destinacao</th>
-                <th>Limite</th>
+                <th>Grupo / Fundo</th>
+                <th>Leis de Referência</th>
+                <th>Teto</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>FDCA + FDI + Cultura + Audiovisual + Reciclagem</td>
+                <td>
+                  <strong>Grupo 1 — teto conjunto</strong><br>
+                  <span style="font-size:13px;color:#666">Rouanet · Esporte · FIA (Criança/Adolescente) · Idoso · Reciclagem</span>
+                </td>
+                <td style="font-size:12px;color:#888">Lei 8.313/91 · 11.438/06 · 8.069/90 · 12.213/10 · 14.260/21</td>
                 <td>6%</td>
               </tr>
               <tr>
-                <td>Se incluir Esporte (Lei de Incentivo ao Esporte)</td>
-                <td>7%</td>
+                <td>
+                  <strong>Grupo 2 — teto conjunto</strong><br>
+                  <span style="font-size:13px;color:#666">PRONON (Oncologia) · PRONAS/PCD (Deficiência)</span>
+                </td>
+                <td style="font-size:12px;color:#888">Lei 12.715/12</td>
+                <td>2%</td>
               </tr>
-              <tr>
-                <td>PRONON (Oncologia)</td>
-                <td>+1%</td>
-              </tr>
-              <tr>
-                <td>PRONAS/PCD (Pessoa com Deficiencia)</td>
-                <td>+1%</td>
-              </tr>
-              <tr style="background: #f8f9fa;">
-                <td><strong>TOTAL MAXIMO</strong></td>
-                <td><strong>9%</strong></td>
+              <tr class="total-row">
+                <td colspan="2"><strong>TOTAL MÁXIMO (Grupos 1 + 2)</strong></td>
+                <td><strong>8%</strong></td>
               </tr>
             </tbody>
           </table>
+          <p style="font-size:13px;color:#888;margin-top:12px">
+            <i class="fas fa-info-circle"></i>
+            Dentro do Grupo 1, o cliente pode distribuir os 6% entre os fundos como preferir — Rouanet, Esporte, FIA etc. — mas o total do grupo não pode ultrapassar 6%. O mesmo vale para o Grupo 2 (PRONON + PRONAS juntos ≤ 2%).
+          </p>
         </div>
 
         <div class="legal-box">
           <h3><i class="fas fa-calendar-check"></i> Prazos Importantes</h3>
           <p>
-            <strong>Destinacao durante o ano:</strong> Ate 31/12 do ano-calendario para deducao na declaracao do ano seguinte.<br><br>
-            <strong>Destinacao na declaracao:</strong> Ate a data limite de entrega da DIRPF (geralmente abril/maio),
-            com pagamento do DARF ate o ultimo dia do prazo.
+            <strong>Destinação durante o ano:</strong> Até 31/12 do ano-calendário para dedução na declaração do ano seguinte.<br><br>
+            <strong>Destinação na declaração:</strong> Até a data limite de entrega da DIRPF (geralmente abril/maio),
+            com pagamento do DARF até o último dia do prazo.<br><br>
+            <strong>Atenção:</strong> A destinação só é possível na <strong>declaração completa</strong> (modelo completo, não simplificado).
           </p>
         </div>
 
         <div class="legal-box">
-          <h3><i class="fas fa-file-invoice"></i> Documentacao e Comprovantes</h3>
+          <h3><i class="fas fa-file-invoice"></i> Documentação e Comprovantes</h3>
           <p>
-            Para fins de DIRPF, o que vale e o <strong>DARF pago</strong> e o lancamento correto na declaracao.
-            A plataforma IncentivaBR emite um <strong>comprovante de destinacao</strong> que confirma a operacao realizada,
-            servindo como documento de controle para voce e seu cliente. Os fundos tambem emitem confirmacoes de deposito
-            em seus proprios modelos. Ambos servem para tranquilidade e rastreabilidade da destinacao.
+            Para fins de DIRPF, o que vale é o <strong>DARF pago</strong> e o lançamento correto na declaração.
+            A plataforma IncentivaBR emite um <strong>comprovante de destinação</strong> que confirma a operação realizada,
+            servindo como documento de controle para você e seu cliente. Os fundos também emitem confirmações de depósito
+            em seus próprios modelos. Ambos servem para tranquilidade e rastreabilidade da destinação.
+            <br><br>
+            <strong>Onde lançar na DIRPF:</strong> Ficha "Doações Efetuadas" — código 40 (FCA/FDI/FIA) ou código 41 (Incentivo à Cultura via Rouanet). A plataforma gera relatório com todos os dados para preenchimento.
+          </p>
+        </div>
+
+        <div class="legal-box" style="border-left-color:#F7941D">
+          <h3><i class="fas fa-user-tie"></i> Script para Abordar seu Cliente</h3>
+          <p>
+            <strong>"[Nome], você sabia que parte do imposto que você já vai pagar pode ser direcionada para projetos sociais — e retorna 100% para você na restituição? É um direito que 99% dos contribuintes não conhece. Posso te mostrar como funciona em 5 minutos?"</strong>
+          </p>
+          <p style="margin-top:12px;font-size:14px;color:#888">
+            Esse script funciona especialmente bem com <strong>servidores públicos</strong> (IR retido na fonte, declaração completa, renda previsível) e <strong>profissionais liberais</strong> com IRPF elevado.
           </p>
         </div>
       </div>
@@ -453,7 +507,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Programa Contador Parceiro</h2>
-        <p>Niveis de parceria com beneficios crescentes</p>
+        <p>Três níveis de parceria — gratuito para começar</p>
       </div>
 
       <div class="partner-levels">
@@ -461,11 +515,12 @@
           <div class="medal">🥉</div>
           <h3>Cadastrado</h3>
           <ul>
-            <li><i class="fas fa-check"></i> Calculadora gratuita</li>
-            <li><i class="fas fa-check"></i> Material explicativo</li>
-            <li><i class="fas fa-check"></i> Suporte por email</li>
+            <li><i class="fas fa-check"></i> Calculadora de IR gratuita</li>
+            <li><i class="fas fa-check"></i> Material explicativo para clientes</li>
+            <li><i class="fas fa-check"></i> Quadro legal atualizado (2025)</li>
+            <li><i class="fas fa-check"></i> Suporte por e-mail</li>
           </ul>
-          <a href="#cadastro" class="btn btn-primary btn-sm" style="width: 100%;">Cadastrar Gratis</a>
+          <a href="#cadastro" class="btn btn-primary btn-sm" style="width: 100%;">Cadastrar Grátis</a>
         </div>
 
         <div class="partner-card featured">
@@ -473,10 +528,11 @@
           <h3>Certificado</h3>
           <ul>
             <li><i class="fas fa-check"></i> Tudo do Cadastrado</li>
-            <li><i class="fas fa-check"></i> Curso online (2h)</li>
-            <li><i class="fas fa-check"></i> Selo "Contador Parceiro"</li>
-            <li><i class="fas fa-check"></i> Listagem no site</li>
-            <li><i class="fas fa-check"></i> Suporte prioritario</li>
+            <li><i class="fas fa-check"></i> Curso online (2h) — conteúdo CFC</li>
+            <li><i class="fas fa-check"></i> Selo "Contador Parceiro IncentivaBR"</li>
+            <li><i class="fas fa-check"></i> Listagem no diretório do site</li>
+            <li><i class="fas fa-check"></i> Suporte prioritário</li>
+            <li><i class="fas fa-check"></i> Kit de materiais para clientes (PDF)</li>
           </ul>
           <a href="#cadastro" class="btn btn-white btn-sm" style="width: 100%; color: #1E3A5F;">Certificar-me</a>
         </div>
@@ -486,41 +542,47 @@
           <h3>Embaixador</h3>
           <ul>
             <li><i class="fas fa-check"></i> Tudo do Certificado</li>
-            <li><i class="fas fa-check"></i> Dashboard multi-clientes</li>
-            <li><i class="fas fa-check"></i> Comissao por indicacao</li>
-            <li><i class="fas fa-check"></i> Co-marketing</li>
+            <li><i class="fas fa-check"></i> Co-marketing e indicações</li>
+            <li><i class="fas fa-check"></i> Acesso antecipado a novos fundos</li>
+            <li class="em-breve"><i class="fas fa-clock"></i> Dashboard multi-clientes <em>(em breve)</em></li>
+            <li class="em-breve"><i class="fas fa-clock"></i> Relatórios consolidados <em>(em breve)</em></li>
           </ul>
           <a href="#cadastro" class="btn btn-primary btn-sm" style="width: 100%;">Candidatar-me</a>
         </div>
       </div>
+
+      <p style="text-align:center;margin-top:24px;font-size:13px;color:#888;max-width:600px;margin-left:auto;margin-right:auto">
+        <i class="fas fa-info-circle"></i>
+        O programa é gratuito para contadores registrados no CRC. O nível Embaixador exige número de CRC ativo e carteira mínima de 10 clientes PF.
+      </p>
     </div>
   </section>
 
   <!-- Ferramentas -->
   <section class="tools-section">
-    <h2>Ferramentas Disponiveis</h2>
+    <h2>Ferramentas Disponíveis</h2>
     <p style="opacity: 0.9; max-width: 600px; margin: 0 auto;">Recursos gratuitos para facilitar seu trabalho</p>
 
     <div class="tools-grid">
       <div class="tool-item">
         <i class="fas fa-calculator"></i>
         <h4>Calculadora IR</h4>
-        <p>Simples e detalhada</p>
+        <p>Simples e detalhada — por fundo</p>
       </div>
       <div class="tool-item">
         <i class="fas fa-file-pdf"></i>
-        <h4>Relatorios PDF</h4>
-        <p>Para anexar a declaracao</p>
-      </div>
-      <div class="tool-item">
-        <i class="fas fa-users"></i>
-        <h4>Gestao de Clientes</h4>
-        <p>Multi-cliente (Embaixador)</p>
+        <h4>Relatórios PDF</h4>
+        <p>Dados prontos para a DIRPF</p>
       </div>
       <div class="tool-item">
         <i class="fas fa-graduation-cap"></i>
         <h4>Curso Online</h4>
-        <p>Certificacao gratuita</p>
+        <p>Certificação gratuita (conteúdo CFC)</p>
+      </div>
+      <div class="tool-item">
+        <i class="fas fa-users" style="opacity:0.45"></i>
+        <h4 style="opacity:0.45">Gestão Multi-clientes</h4>
+        <p style="opacity:0.45">Em desenvolvimento — Embaixador</p>
       </div>
     </div>
   </section>
@@ -530,24 +592,59 @@
     <div class="container">
       <div class="section-header">
         <h2>Perguntas Frequentes</h2>
-        <p>Duvidas comuns de contadores sobre destinacao de IR</p>
+        <p>Dúvidas comuns de contadores sobre destinação de IR</p>
       </div>
       <div style="max-width: 700px; margin: 0 auto;">
         <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Meu cliente pode destinar se tiver imposto a restituir?</summary>
-          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">Sim! A destinacao e sobre o <strong>IR devido</strong>, nao sobre o saldo. Se o cliente tem R$ 5.000 de IR devido e R$ 6.000 de retencao na fonte, ele pode destinar ate 6% dos R$ 5.000 (R$ 300). A restituicao sera R$ 1.300 em vez de R$ 1.000.</p>
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Meu cliente pode destinar mesmo tendo imposto a restituir?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            Sim! A destinação incide sobre o <strong>IR devido calculado</strong>, não sobre o saldo final.
+            Exemplo: cliente com R$5.000 de IR devido e R$6.000 retidos na fonte pode destinar até 6% dos R$5.000 (R$300).
+            A restituição passa de R$1.000 para R$1.300 — sem nenhum custo adicional.
+          </p>
         </details>
         <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Qual a diferenca entre destinar durante o ano e na declaracao?</summary>
-          <p style="margin-top: 1rem; color: #666; line-height: 1.6;"><strong>Durante o ano:</strong> deposito direto na conta do fundo/projeto ate 31/12. Limite de 6% (ou 7% com esporte).<br><br><strong>Na declaracao:</strong> via DARF ate o fim do prazo de entrega. Limite de 3% para FDCA e 3% para FDI. Mais pratico, mas com limite menor por fundo.</p>
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Por que a declaração precisa ser completa (não simplificada)?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            Somente o modelo completo permite o lançamento das deduções de incentivos fiscais nas fichas específicas.
+            Na declaração simplificada, o contribuinte usa um desconto padrão de 20% e abre mão de todas as deduções
+            itemizadas — incluindo a destinação cultural, esportiva etc. A IncentivaBR identifica automaticamente
+            se o cliente usa o modelo correto antes de prosseguir.
+          </p>
         </details>
         <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Como lancar a destinacao na DIRPF?</summary>
-          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">Na ficha <strong>"Doações Diretamente na Declaração"</strong> (para DARF) ou <strong>"Pagamentos Efetuados"</strong> codigo 40 (para depositos feitos durante o ano). A plataforma gera um relatorio com os dados necessarios para o lancamento.</p>
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Qual a diferença entre destinar durante o ano e na declaração?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            <strong>Durante o ano (até 31/12):</strong> depósito direto na conta do fundo/projeto. Limite de 6% (Grupo 1) + 2% (Grupo 2) = 8% máximo.<br><br>
+            <strong>Na declaração (até o prazo da DIRPF):</strong> via DARF, com limite menor para alguns fundos (3% por fundo individual). Mais prático, mas planeja com o cliente antes para não perder o prazo do depósito direto.
+          </p>
         </details>
         <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Quanto custa usar a plataforma?</summary>
-          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">Para contadores, o cadastro e as ferramentas basicas (calculadora, materiais) sao <strong>gratuitos</strong>. O nivel Embaixador com dashboard multi-clientes tem condicoes especiais - entre em contato para saber mais.</p>
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Como lançar a destinação na DIRPF?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            Na ficha <strong>"Doações Efetuadas"</strong>:
+            <br>— Código <strong>40</strong>: FCA, FDI, FIA, Fundo do Idoso, Reciclagem, PRONON, PRONAS
+            <br>— Código <strong>41</strong>: Incentivo à Cultura (Rouanet — Art. 18)
+            <br>— Código <strong>42</strong>: Incentivo ao Esporte
+            <br><br>A plataforma gera um relatório com todos os dados (CNPJ do fundo, valor, data, número de comprovante) para você copiar direto no PGD.
+          </p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">O programa de parceria tem algum custo?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            Não. O cadastro e as ferramentas básicas (calculadora, materiais, base legal) são totalmente gratuitos para
+            contadores registrados no CRC. O nível Certificado inclui curso e selo sem custo. O nível Embaixador
+            (com funcionalidades avançadas em desenvolvimento) terá modelo a confirmar — entre em contato para saber mais.
+          </p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 1.25rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+          <summary style="font-weight: 600; cursor: pointer; color: #1E3A5F;">Quais tipos de clientes se beneficiam mais?</summary>
+          <p style="margin-top: 1rem; color: #666; line-height: 1.6;">
+            <strong>Servidores públicos federais e estaduais:</strong> renda previsível, IR retido na fonte, quase sempre usam modelo completo. Perfil ideal.<br><br>
+            <strong>Profissionais liberais (médicos, advogados, engenheiros):</strong> carnê-leão ou IRPF elevado, alta capacidade de destinação.<br><br>
+            <strong>Assalariados com renda acima de R$5.000/mês:</strong> IR devido suficiente para destinação relevante.<br><br>
+            <strong>Quem NÃO se beneficia:</strong> contribuintes com declaração simplificada, isentos de IR ou com IR devido muito baixo.
+          </p>
         </details>
       </div>
     </div>
@@ -555,15 +652,16 @@
 
   <!-- CTA -->
   <section class="cta-contador" id="cadastro">
-    <h2>Faca Parte da Rede de Contadores</h2>
+    <h2>Faça Parte da Rede de Contadores</h2>
     <p>
-      Cadastre-se gratuitamente e comece a oferecer esse diferencial aos seus clientes.
+      Cadastre-se gratuitamente. Contador com CRC ativo pode começar hoje
+      a oferecer esse diferencial aos seus clientes.
     </p>
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="mailto:contadores@incentivabr.com.br" class="btn btn-white" style="color: #F7941D;">
         <i class="fas fa-envelope"></i> contadores@incentivabr.com.br
       </a>
-      <a href="https://wa.me/5561999682929?text=Olá! Sou contador e quero conhecer o programa de parceria" target="_blank" class="btn btn-outline-white">
+      <a href="https://wa.me/5561999682929?text=Olá! Sou contador(a) registrado(a) no CRC e quero conhecer o programa de parceria IncentivaBR." target="_blank" class="btn btn-outline-white">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
     </div>
@@ -576,12 +674,12 @@
     </a>
     <p class="tagline">Incentivos Fiscais Simplificados</p>
     <div style="margin: 1.5rem 0;">
-      <a href="index.html" style="color: rgba(255,255,255,0.9); margin: 0 1rem;">Inicio</a>
-      <a href="para-organizacoes.html" style="color: rgba(255,255,255,0.9); margin: 0 1rem;">Para Organizacoes</a>
+      <a href="index.html" style="color: rgba(255,255,255,0.9); margin: 0 1rem;">Início</a>
+      <a href="para-organizacoes.html" style="color: rgba(255,255,255,0.9); margin: 0 1rem;">Para Organizações</a>
     </div>
     <div class="footer-bottom">
       <p>
-        <a href="politica-privacidade.html" style="color: rgba(255,255,255,0.8);">Politica de Privacidade</a> |
+        <a href="politica-privacidade.html" style="color: rgba(255,255,255,0.8);">Política de Privacidade</a> |
         <a href="termos-uso.html" style="color: rgba(255,255,255,0.8);">Termos de Uso</a>
       </p>
       <p style="margin-top: 12px;">&copy; 2026 IncentivaBR. Todos os direitos reservados.</p>
