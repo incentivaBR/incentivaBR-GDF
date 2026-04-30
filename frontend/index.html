@@ -1,323 +1,107 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IncentivaBR - Incentivos Fiscais Simplificados</title>
-  <meta name="description" content="Transforme seu Imposto de Renda em impacto social. Destine at&eacute; 9% do seu IR para projetos sociais verificados.">
+  <title>IncentivaBR — Em Breve</title>
+  <meta name="description" content="Todos os incentivos fiscais do Brasil em um só lugar. Em breve.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/incentivabr-theme.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <a href="index.html" class="logo-link">
-      <img src="assets/logo-incentivabr.png" alt="IncentivaBR" class="logo-img">
-    </a>
-    <nav>
-      <a href="projetos.html">Projetos</a>
-      <a href="projetos-rouanet.html">Lei Rouanet</a>
-      <a href="calculadora-escolha.html">Calculadora IR</a>
-      <a href="#" id="navAuth" class="btn btn-primary btn-sm">Entrar</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle">
-      <i class="fas fa-bars"></i>
-    </button>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-home">
-    <h1>Transforme seu Imposto<br>em <span class="highlight">Impacto Social</span></h1>
-    <p>Destine at&eacute; <span class="max-percentage">9%</span> do seu IR devido para projetos que transformam vidas. Sem custo adicional para voc&ecirc;.</p>
-
-    <div class="hero-buttons">
-      <a href="calculadora-escolha.html" class="btn btn-white">
-        <i class="fas fa-calculator"></i> Calcular meu IR
-      </a>
-      <a href="projetos.html" class="btn btn-outline-white">
-        <i class="fas fa-hand-holding-heart"></i> Ver Projetos
-      </a>
-    </div>
-
-  </section>
-
-  <!-- Como Funciona - Resumo -->
-  <section class="section" id="como-funciona">
-    <div class="container">
-      <div class="section-header">
-        <h2>Como Funciona?</h2>
-      </div>
-      <div class="steps-grid">
-        <div class="card step-card">
-          <div class="step-emoji">1️⃣</div>
-          <h3 class="text-primary">Calcule seu IR</h3>
-          <p>Descubra quanto você pode destinar (até <span class="max-percentage">9%</span>)</p>
-        </div>
-        <div class="card step-card">
-          <div class="step-emoji">2️⃣</div>
-          <h3 class="text-secondary-color">Escolha projetos</h3>
-          <p>Apoie causas que transformam vidas</p>
-        </div>
-        <div class="card step-card">
-          <div class="step-emoji">3️⃣</div>
-          <h3 class="text-success">Receba de volta</h3>
-          <p>Valor volta na restituição ou reduz imposto</p>
-        </div>
-      </div>
-      <div class="section-link">
-        <a href="como-funciona.html" class="link-accent">
-          Ver explicação completa →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Quem J&aacute; Destinou Recomenda</h2>
-        <p>Veja o que dizem os contribuintes que transformaram seu imposto em impacto</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-content">
-            "Sempre quis ajudar, mas n&atilde;o sabia como. Descobri que podia destinar parte do meu IR sem pagar nada a mais.
-            J&aacute; s&atilde;o 3 anos consecutivos apoiando projetos para crian&ccedil;as."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MF</div>
-            <div class="testimonial-info">
-              <h4>Marcos F.</h4>
-              <p>Servidor P&uacute;blico Federal</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-content">
-            "Minha contadora indicou o IncentivaBR. O processo foi simples e recebi o recibo certinho para incluir
-            na declara&ccedil;&atilde;o. Recomendo a todos os meus colegas."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AS</div>
-            <div class="testimonial-info">
-              <h4>Ana S.</h4>
-              <p>Analista Judici&aacute;rio - TRF</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-content">
-            "Como contador, indico para todos os meus clientes que fazem declara&ccedil;&atilde;o completa.
-            &Eacute; uma forma inteligente de direcionar recursos que j&aacute; seriam pagos ao governo."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">RC</div>
-            <div class="testimonial-info">
-              <h4>Roberto C.</h4>
-              <p>Contador - CRC/DF</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Selos de Confiança -->
-  <section class="trust-section">
-    <div class="trust-grid">
-      <div class="trust-badge">
-        <i class="fas fa-shield-alt"></i>
-        <span>Dados Protegidos</span>
-        <span class="trust-badge-detail">LGPD Compliant</span>
-      </div>
-      <div class="trust-badge">
-        <i class="fas fa-lock"></i>
-        <span>Conexão Segura</span>
-        <span class="trust-badge-detail">SSL/TLS</span>
-      </div>
-      <div class="trust-badge">
-        <i class="fas fa-certificate"></i>
-        <span>Registro INPI</span>
-        <span class="trust-badge-detail">BR512025000647-0</span>
-      </div>
-      <div class="trust-badge">
-        <i class="fas fa-landmark"></i>
-        <span>Fundos Oficiais</span>
-        <span class="trust-badge-detail">Gov. Federal e Distrital</span>
-      </div>
-      <div class="trust-badge">
-        <i class="fas fa-calculator"></i>
-        <span>Validado por</span>
-        <span class="trust-badge-detail">Contadores</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Para Organiza&ccedil;&otilde;es -->
-  <section class="org-cta-section">
-    <h2><i class="fas fa-building"></i> Sua Organiza&ccedil;&atilde;o Quer Oferecer Isso aos Associados?</h2>
-    <p>
-      Plataforma personalizada com sua marca para facilitar a destina&ccedil;&atilde;o de IR dos seus membros.
-    </p>
-    <div class="org-features">
-      <div class="org-feature">
-        <i class="fas fa-palette"></i>
-        <span>Sua marca e identidade visual</span>
-      </div>
-      <div class="org-feature">
-        <i class="fas fa-filter"></i>
-        <span>Projetos direcionados ao seu nicho</span>
-      </div>
-      <div class="org-feature">
-        <i class="fas fa-chart-line"></i>
-        <span>Dashboard de impacto</span>
-      </div>
-      <div class="org-feature">
-        <i class="fas fa-headset"></i>
-        <span>Suporte dedicado</span>
-      </div>
-    </div>
-    <a href="para-organizacoes.html" class="btn btn-white-secondary">
-      <i class="fas fa-arrow-right"></i> Quero saber mais
-    </a>
-  </section>
-
-  <!-- Precisa de Ajuda -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <h2>Precisa de Ajuda?</h2>
-        <p>Estamos aqui para esclarecer suas dúvidas</p>
-      </div>
-      <div class="help-grid">
-        <a href="passo-a-passo.html" class="card help-card">
-          <div class="help-card-icon icon-secondary">
-            <i class="fas fa-route"></i>
-          </div>
-          <h3>Passo a Passo</h3>
-          <p>Guia visual completo do processo de destinação</p>
-        </a>
-        <a href="faq.html" class="card help-card">
-          <div class="help-card-icon icon-accent">
-            <i class="fas fa-question-circle"></i>
-          </div>
-          <h3>Perguntas Frequentes</h3>
-          <p>Respostas para as dúvidas mais comuns</p>
-        </a>
-        <div class="card help-card" onclick="if(typeof TINA !== 'undefined') TINA.open();">
-          <div class="help-card-icon icon-success">
-            <i class="fas fa-robot"></i>
-          </div>
-          <h3>Fale com a TINA</h3>
-          <p>Nossa assistente virtual responde na hora</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Pronto para fazer a diferen&ccedil;a?</h2>
-    <p>Seu imposto pode transformar vidas. Comece agora!</p>
-    <div class="cta-buttons">
-      <a href="calculadora-escolha.html" class="btn btn-white">
-        <i class="fas fa-calculator"></i> Calcular meu IR
-      </a>
-      <a href="projetos.html" class="btn btn-outline-white">
-        <i class="fas fa-search"></i> Explorar Projetos
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="index.html" class="logo-link">
-      <img src="assets/logo-incentivabr.png" alt="IncentivaBR" class="logo-img logo-white">
-    </a>
-    <p class="tagline">Incentivos Fiscais Simplificados</p>
-
-    <div class="footer-social">
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    </div>
-
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Navega&ccedil;&atilde;o</h4>
-        <a href="index.html">In&iacute;cio</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="calculadora-escolha.html">Calculadora IR</a>
-        <a href="login.html">Entrar</a>
-      </div>
-      <div class="footer-col">
-        <h4>Recursos</h4>
-        <a href="passo-a-passo.html">Passo a Passo</a>
-        <a href="faq.html">Perguntas Frequentes</a>
-        <a href="para-organizacoes.html">Para Organiza&ccedil;&otilde;es</a>
-        <a href="para-contadores.html">Para Contadores</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <a href="mailto:contato@incentivabr.com.br"><i class="fas fa-envelope"></i> contato@incentivabr.com.br</a>
-        <a href="#"><i class="fab fa-instagram"></i> @incentivabr</a>
-        <a href="#"><i class="fab fa-linkedin"></i> IncentivaBR</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>
-        <a href="politica-privacidade.html" class="footer-legal-link">Política de Privacidade</a> |
-        <a href="termos-uso.html" class="footer-legal-link">Termos de Uso</a>
-      </p>
-      <p class="footer-copyright">&copy; 2026 IncentivaBR. Todos os direitos reservados.</p>
-      <p class="footer-inpi">INPI: BR512025000647-0</p>
-    </div>
-  </footer>
-
-  <script src="js/auth.js"></script>
-  <script src="js/mobile-menu.js"></script>
-  <script src="js/tina.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Update nav based on auth status
-    const navAuth = document.getElementById('navAuth');
-    if (auth.isLoggedIn()) {
-      const user = auth.getUser();
-      navAuth.textContent = user.nome ? user.nome.split(' ')[0] : 'Minha Conta';
-      navAuth.href = 'dashboard.html';
-      navAuth.classList.remove('btn', 'btn-primary', 'btn-sm');
-    } else {
-      navAuth.href = 'login.html';
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
     }
   </script>
-  <script src="js/tenant.js"></script>
+</head>
+<body class="bg-[#1E3A5F] min-h-screen flex flex-col items-center justify-center px-6 font-['Inter']">
+
+  <!-- LOGO -->
+  <div class="text-center mb-12">
+    <div class="text-4xl font-black text-white tracking-tight mb-1">
+      Incentiva<span class="text-[#F7941D]">BR</span>
+    </div>
+    <div class="text-white/40 text-sm font-medium tracking-widest uppercase">Incentivos Fiscais Simplificados</div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="text-center max-w-lg mb-10">
+    <div class="inline-flex items-center gap-2 bg-[#F7941D]/10 border border-[#F7941D]/20 rounded-full px-4 py-1.5 mb-6 text-[#F7941D] text-xs font-bold tracking-widest uppercase">
+      Em breve
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">
+      Todos os incentivos fiscais<br>em um só lugar.
+    </h1>
+    <p class="text-white/60 text-base leading-relaxed">
+      Cultura · Esporte · Criança · Idoso · Reciclagem · Saúde.<br>
+      Até <strong class="text-white">8% do seu IR</strong> direcionados para causas que você escolhe —
+      <strong class="text-[#F7941D]">sem custo adicional.</strong>
+    </p>
+  </div>
+
+  <!-- CARDS DE FUNDOS -->
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-3 max-w-xl w-full mb-10">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">🎭</div>
+      <div class="text-white/60 text-xs">Cultura</div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">⚽</div>
+      <div class="text-white/60 text-xs">Esporte</div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">👶</div>
+      <div class="text-white/60 text-xs">Criança</div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">👴</div>
+      <div class="text-white/60 text-xs">Idoso</div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">♻️</div>
+      <div class="text-white/60 text-xs">Reciclagem</div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+      <div class="text-xl mb-1">🏥</div>
+      <div class="text-white/60 text-xs">Saúde</div>
+    </div>
+  </div>
+
+  <!-- CTA — AVISE-ME -->
+  <div class="w-full max-w-sm mb-6">
+    <p class="text-white/50 text-sm text-center mb-4">Quer ser avisado quando abrir?</p>
+    <a href="https://wa.me/5561999682929?text=Quero%20ser%20avisado%20quando%20o%20IncentivaBR%20abrir!"
+       target="_blank"
+       class="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#1ebe59] text-white font-bold py-4 rounded-2xl transition-all hover:scale-[1.02] no-underline text-base">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.1 1.508 5.83L0 24l6.335-1.479A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.499-5.207-1.371l-.374-.217-3.762.877.913-3.651-.24-.384A9.957 9.957 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      Avise-me pelo WhatsApp
+    </a>
+    <a href="mailto:contato@incentivabr.com.br?subject=Quero%20ser%20avisado%20quando%20abrir"
+       class="flex items-center justify-center gap-2 w-full text-white/40 hover:text-white/70 text-sm mt-3 transition-colors no-underline">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+      ou por e-mail
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="mt-16 text-white/20 text-xs text-center">
+    <p>© 2026 IncentivaBR · INPI BR512025000647-0</p>
+    <p class="mt-1">
+      <a href="politica-privacidade.html" class="hover:text-white/40 transition-colors no-underline">Privacidade</a>
+      <span class="mx-2">·</span>
+      <a href="termos-uso.html" class="hover:text-white/40 transition-colors no-underline">Termos</a>
+    </p>
+  </div>
+
 </body>
 </html>
